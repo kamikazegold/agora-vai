@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                         'section section aside aside'
+                         'div div div div';
+                         
+    grid-template-rows: 20vh 70vh 40vh;
+  }
+  
+  nav{
+    grid-area: navbar;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav a{
+    color:white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 16pt;
+    
+    
+  }
+  
+  
+  
+  
+  nav img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+  
+  section{
+    grid-area: section;
+    ;
+  }
+  
+  aside{
+    grid-area: aside;
+    
+  }
+
+  aside img {
+      height: 50px;
+      width: 50px;
+      justify-content: space-around;
+      
+  }
+  
+  div{
+    grid-area: div;
+    ;
+  }
+  
+ 
+ 
+  
+  
+   section, aside, div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  @media(max-width: 768px){
+    body{
+      grid-template-areas: 'navbar navbar navbar navbar'
+                           'section section aside aside '
+                           'div div div div';
+                           
+      grid-template-rows: 20vh 70vh 70vh 40vh;              
+    }
+    nav a{ 
+      display: none;
+    }
+    nav img{
+      display: block;
+    }
+  }
+  
+  @media(max-width:425px){
+    body{
+      grid-template-areas: 'navbar navbar navbar navbar'
+                           'section section section section'
+                           'aside aside aside aside'
+                           'div div div div';
+                           
+      grid-template-rows: 20vh 70vh 70vh 70vh 70vh 40vh;
+    }
+  }
+

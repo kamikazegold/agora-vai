@@ -1,0 +1,53 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>texte</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- BARRINHA NAV -->
+    <nav> 
+        <a href="#">ajudar</a>
+        <a href="#">cuidar</a>
+        <a href="#">amar</a>
+        
+
+        <img src="{% static 'imagem/dog.png' %}" alt="">
+    </nav>
+
+    <!-- COLUNAS -->
+    
+    <section>
+      <h2>login</h2>
+      <input placeholder="email" type="email">
+      <input placeholder="password" type="password">
+    </section>
+
+    <aside>
+      <h2>cadastro</h2>
+      <input placeholder="nome" type="nome">
+      <input placeholder="sobrenome" type="sobrenome">
+      <input placeholder="email" type="email">
+      <input placeholder="password" type="password">
+ 
+          <img src="{% static 'imagem/facebook.png' %}" alt="">
+          <img src="{% static 'imagem/icons8-gmail-64.png' %}" alt="">
+      
+    </aside>
+
+    <div>
+      <h2>fale conosco</h2>
+      <input placeholder="nome" type="nome">
+      <input placeholder="sobrenome" type="sobrenome">
+      <input placeholder="email" type="email">
+      <input placeholder="password" type="password">
+    </div>
+    
+    
+</body>
+</html>
