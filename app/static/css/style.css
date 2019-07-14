@@ -6,11 +6,12 @@ body{
                          'div div div div';
                          
     grid-template-rows: 20vh 70vh 40vh;
+    
   }
   
   nav{
     grid-area: navbar;
-    background-color: black;
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -21,6 +22,7 @@ body{
     font-size: 16pt;
     
     
+    
   }
   
   
@@ -29,18 +31,63 @@ body{
   nav img{
     width: 50px;
     height: 50px;
+    flex-direction: row;
+    
   }
   
   
   
   section{
     grid-area: section;
-    ;
+    background-color: whitesmoke; 
   }
-  
+
+
+   section input{
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 300px;
+   }
+
+   section button{
+    display:flex; 
+    border-radius: 5px;
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+
+   }
+
+
   aside{
     grid-area: aside;
+    background-color: whitesmoke; 
     
+  }
+  aside input{
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 400px;
+      
+  }
+
+  aside button{
+    display:flex; 
+    border-radius: 5px;
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+
   }
 
   aside img {
@@ -50,9 +97,11 @@ body{
       
   }
   
+  
   div{
     grid-area: div;
-    ;
+    background-color: whitesmoke; 
+    
   }
   
  
@@ -80,6 +129,7 @@ body{
     }
     nav img{
       display: block;
+      width: 50px;
     }
   }
   
